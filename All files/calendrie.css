@@ -178,3 +178,13 @@ footer {
   footer p {
     margin-top: 10px;
   }
+
+
+  .btnn{
+    color: #ffffff !important;
+    background-color:transparent !important;
+    border: none !important;
+    margin-top: -5% !important;
+    
+  
+  }
