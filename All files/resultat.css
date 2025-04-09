@@ -91,3 +91,47 @@ h3{
     transform: scale(1.1); /* Grows the card by 10% */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a hover effect */
   }
+
+
+
+
+  footer {
+    background: #1c3646;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    top: 0px;
+  }
+  footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  footer table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  footer th, footer td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  footer th {
+  
+    font-weight: bold;
+  }
+  footer td a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer td a:hover {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
