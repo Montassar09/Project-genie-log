@@ -58,6 +58,10 @@
     margin-top: 12px;
   }
 
+  h2,h3,strong,label,h4{
+    color: rgb(0, 79, 79) !important;
+  }
+
 
 
 
