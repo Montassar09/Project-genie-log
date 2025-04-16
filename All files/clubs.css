@@ -67,3 +67,56 @@ h1{
     font-size: 60px !important;
     color: #004d6b !important;
 }
+form{
+margin-top: 15%;
+}
+.card{
+    margin-top: 5%;
+    margin: 5%;
+  
+}
+
+
+
+
+
+footer {
+    background: #1c3646;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    top: 0px;
+  }
+  footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  footer table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  footer th, footer td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  footer th {
+  
+    font-weight: bold;
+  }
+  footer td a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer td a:hover {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }

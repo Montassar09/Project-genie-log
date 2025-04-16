@@ -1,0 +1,64 @@
+
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .left-section, .right-section {
+    padding: 30px;
+    width: 50%;
+  }
+  
+  .left-section {
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+  }
+  
+  .price {
+    font-size: 28px;
+    margin: 20px 0;
+  }
+  
+  .currency, .per-month {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 20px;
+  }
+  
+  form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .card-info, .address-info {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card-info input, .address-info input {
+    flex: 1;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+  }
+
+
+
+
+  
