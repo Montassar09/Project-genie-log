@@ -80,7 +80,7 @@ margin-top: 15%;
 
 #im{
   position: relative;
-  left: 90px;
+  left: 100px;
 }
 
 
@@ -123,4 +123,9 @@ footer {
   
   footer p {
     margin-top: 10px;
+  }
+
+
+ a{
+    text-decoration: none !important;
   }
