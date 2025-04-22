@@ -73,11 +73,15 @@ margin-top: 15%;
 .card{
     margin-top: 5%;
     margin: 5%;
+    margin-right: 30% ;
   
 }
 
 
-
+#im{
+  position: relative;
+  left: 90px;
+}
 
 
 footer {

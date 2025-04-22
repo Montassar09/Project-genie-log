@@ -90,11 +90,13 @@ header {
 
 h2 {
   color: rgb(33, 33, 103) !important;
+  text-align: center !important;
 }#isg {
   background: url('your-image-path.jpg') no-repeat center center;
   background-size: contain; /* Ensures the whole image fits */
   width: 100%; /* Adjust if needed */
   height: 100%; /* Adjust if needed */
+  
 }
 
 
