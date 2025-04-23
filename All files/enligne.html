@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="enligne.css">
 </head>
 <body>
-    <h1>Declaration de sience enligne </h1>
+    <h1>Declaration de sceance en ligne </h1>
     <div class="container">
         
     
@@ -54,7 +54,7 @@
       </div>
 
     <hr>
-    <h1>Declaration de abcense </h1>
+    <h1>Declaration d'absence </h1>
     <div class="container">
         
     
@@ -94,7 +94,61 @@
            
         </div>
         </div>
+
+
+
+
       </div>
+
+
+
+      <hr>
+      <h1>Ajout de support des cours</h1>
+      <div class="container">
+          
+      
+          <div class="contact-form">
+            <h2>Information personnel pour les professuer</h2>
+            <form>
+              <div class="row">
+                <input type="text" placeholder="votre nom">
+                <input type="email" placeholder="Adresse Email">
+              </div>
+              <div class="row">
+                <input type="text" placeholder="Id">
+                <input type="text" placeholder="Téléphone">
+              </div>
+              <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+              </div>
+            </form>
+          </div>
+          <div class="containerr mt-5">
+              <!-- Formulaire d'ajout de séance -->
+              <div class="card p-4 my-3">
+                  
+                  <form id="seanceForm">
+                      <div class="mb-3">
+                          <label class="form-label" id="ltitre">Titre de cour</label>
+                          <input type="text" class="form-control" id="titre" required>
+                      </div>
+
+                      <div>
+                        <label for="">Choisir un fichier</label><br>
+                        <input type="file" id="fileUpload" name="myFile">
+                      </div><br>
+                      <button type="submit" class="btn btn-primary">Ajouter</button>
+                  </form>
+              </div>
+             
+          </div>
+          </div>
+  
+  
+  
+          
+        </div>
     
 
     <script src="script.js"></script>
