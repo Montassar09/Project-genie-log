@@ -82,7 +82,7 @@ h1{
     position: absolute;
     top: 20%;
     right: 45%;
-    width: 80px;
+    width: 80px !important;
   }
   .card{
     margin: 10%;

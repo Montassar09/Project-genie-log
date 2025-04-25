@@ -51,32 +51,36 @@
           <h3>Coordonnées</h3>
           <form>
             <label>Email</label>
-            <input type="email" value="montassarbenhassine44@gmail.com" disabled>
-    
+            <input type="email" name="email" value="montassarbenhassine44@gmail.com" disabled>
+        
             <h4>Moyen de paiement</h4>
             <label>Informations de la carte</label>
-            <input type="text" placeholder="1234 1234 1234 1234" maxlength="19">
+            <input type="text" name="card_number" placeholder="1234 1234 1234 1234" maxlength="19">
+            
             <div class="card-info">
-              <input type="text" placeholder="MM / AA" maxlength="5">
-              <input type="text" placeholder="CVC" maxlength="3">
+                <input type="text" name="expiry_date" placeholder="MM / AA" maxlength="5">
+                <input type="text" name="cvc" placeholder="CVC" maxlength="3">
             </div>
-    
+        
             <label>Nom du titulaire de la carte</label>
-            <input type="text" placeholder="Nom complet">
-    
+            <input type="text" name="card_holder_name" placeholder="Nom complet">
+        
             <label>Adresse de facturation</label>
-            <select>
-              <option value="TN">Tunisie</option>
-            </select>
-            <input type="text" placeholder="Ligne d'adresse n°1">
-            <input type="text" placeholder="Ligne d'adresse n°2">
+            <input type="text" name="address_line1" placeholder="Ligne d'adresse n°1">
+            <input type="text" name="address_line2" placeholder="Ligne d'adresse n°2">
+            
             <div class="address-info">
-              <input type="text" placeholder="Code postal">
-              <input type="text" placeholder="Ville">
+                <input type="text" name="postal_code" placeholder="Code postal">
+                <input type="text" name="city" placeholder="Ville">
             </div>
-    
-            <label><input type="checkbox"> Enregistrer mes informations en toute sécurité</label>
-            <input type="button" value="Payer" >
+        
+            <select name="country">
+                <option value="TN">Tunisie</option>
+            </select>
+        
+            <label><input type="checkbox" name="save_info"> Enregistrer mes informations en toute sécurité</label>
+            
+            <input type="submit" value="Payer">
           </form>
         </div>
       </div>
