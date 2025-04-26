@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Vérification
     if ($result->num_rows > 0) {
         $_SESSION['user'] = $username;
-        header("Location: Menu.html"); // Redirection
+        header("Location: http://localhost/Project%20genie%20log/All%20files/etudiant.php"); // Redirection
         exit();
     } else {
         $error = "❌ Étudiant non trouvé. Vérifiez vos informations.";
