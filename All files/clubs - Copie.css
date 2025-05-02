@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.9;
+  }
+header {
+    background:linear-gradient(90deg, rgb(39, 8, 106) 0%, rgb(75, 39, 168) 44%, rgb(40, 2, 87) 110%); 
+    border:solid;
+    border-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 150px;
+
+  } 
+  
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-right: 350px;
+    gap: 15px;
+ 
+    
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+    
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+    
+  }
+  header nav ul li :hover{
+    text-decoration: underline;
+      
+    }
+
+
+    .btnn{
+        color: #ffffff !important;
+        background-color:transparent !important;
+        border: none !important;
+        margin-top: -5% !important;
+        
+      
+      }
+h1{
+    position: absolute;
+    top: 15%;
+    right: 35%;
+    font-size: 60px !important;
+    color: #004d6b !important;
+}
+form{
+margin-top: 15%;
+}
+.card{
+    margin-top: 5%;
+    margin: 5%;
+    margin-right: 30% ;
+  
+}
+
+
+#im{
+  position: relative;
+  left: 100px;
+}
+
+
+footer {
+    background: #1c3646;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    top: 0px;
+  }
+  footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  footer table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  footer th, footer td {
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  footer th {
+  
+    font-weight: bold;
+  }
+  footer td a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer td a:hover {
+    text-decoration: underline;
+  }
+  
+  footer p {
+    margin-top: 10px;
+  }
+
+
+ a{
+    text-decoration: none !important;
+  }

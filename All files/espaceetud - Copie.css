@@ -1,0 +1,89 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 40px;
+    background: #fff;
+    color: #222;
+  }
+  h2{
+    color: black !important;
+    text-align: center;
+  }
+
+
+  header {
+    background:linear-gradient(90deg, rgb(39, 8, 106) 0%, rgb(75, 39, 168) 44%, rgb(40, 2, 87) 110%); 
+    border:solid;
+    border-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 150px;
+
+  } 
+  
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding-right: 350px;
+    gap: 15px;
+ 
+    
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+    
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+    
+  }
+  header nav ul li :hover{
+    text-decoration: underline;
+      
+    }
+h1{
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    color: rgb(255, 255, 255) !important;
+    font-size: 50px !important;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    
+}
+
+.btnn{
+    color: #ffffff !important;
+    background-color:transparent !important;
+    border: none !important;
+    margin-top: -5% !important;
+    
+  
+  }
+  
+
+
+  h3{
+    position: absolute;
+    top: 20%;
+    right: 45%;
+    width: 80px !important;
+  }
+  .card{
+    margin: 10%;
+  }
