@@ -35,24 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute();
             $message = "Absence ajoutée avec succès.";
         }
-
-        if (isset($_POST['submit_cours'])) {
-            $titre = $_POST['titre_cours'];
-            $file = $_FILES['myFile'];
-        
-            $targetDir = "uploads/";
-            $fileName = basename($file["name"]);
-            $targetFilePath = $targetDir . $fileName;
-        
-            if (move_uploaded_file($file["tmp_name"], $targetFilePath)) {
-                $stmt = $conn->prepare("INSERT INTO supports (titre, fichier) VALUES (?, ?)");
-                $stmt->bind_param("ss", $titre, $targetFilePath);
-                $stmt->execute();
-            } else {
-                echo "<script>alert('Erreur lors de l\'envoi du fichier.');</script>";
-            }
-        }
-        
     }
 }
 ?>
@@ -112,28 +94,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="text" name="titre_absence" placeholder="Titre de la séance" required>
             <input type="date" name="date_absence" required>
             <button type="submit" name="submit_absence">Ajouter</button>
-        </div>
-    </form>
-</div>
-
-<hr>
-
-<h1>Ajout de support de cours</h1>
-<div class="container">
-    <form method="POST" enctype="multipart/form-data">
-        <div class="contact-form">
-            <h2>Information personnel</h2>
-            <input type="text" placeholder="Nom" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" placeholder="ID" required>
-            <input type="text" placeholder="Téléphone" required>
-        </div>
-
-        <div class="card">
-            <h4>Ajout d’un fichier support</h4>
-            <input type="text" name="titre_cours" placeholder="Titre de cours" required>
-            <input type="file" name="myFile" required>
-            <button type="submit" name="submit_cours">Ajouter</button>
         </div>
     </form>
 </div>
