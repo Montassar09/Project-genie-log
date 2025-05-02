@@ -1,7 +1,6 @@
 <?php
 include 'db.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -65,106 +64,110 @@ include 'db.php';
     tr:hover {
         background-color: #f9f9f9;
     }
-
-    form label {
-        display: block;
-        margin-top: 15px;
-        color: #333;
-        font-weight: 500;
-    }
-
-    input, select, button {
-        width: 100%;
-        padding: 12px;
-        margin-top: 8px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-sizing: border-box;
-    }
-
-    button {
-        background-color: #4a69bd;
-        color: white;
-        font-weight: bold;
-        border: none;
-        margin-top: 20px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    button:hover {
-        background-color: #3b5ca8;
-    }
-
     </style>
 </head>
 <body>
 
 <header>Espace Étudiant</header>
 
-<div class="section">
-    <h2>Mes Cours</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Matière</th>
-                <th>Groupe</th>
-                <th>Classe</th>
-                <th>Professeur</th>
-                <th>Horaire</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            $result = $conn->query("SELECT * FROM cours");
-            while($row = $result->fetch_assoc()) {
-                echo "<tr>
-                        <td>".$row['nom_cours']."</td>
-                        <td>".$row['groupe']."</td>
-                        <td>".$row['classe']."</td>
-                        <td>".$row['professeur']."</td>
-                        <td>".$row['horaire']."</td>
-                      </tr>";
-            }
-            ?>
-        </tbody>
-    </table>
+<div class="container">
+
+    <!-- Cours -->
+    <div class="section">
+        <h2>Mes Cours</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Matière</th>
+                    <th>Groupe</th>
+                    <th>Classe</th>
+                    <th>Professeur</th>
+                    <th>Horaire</th>
+                    <th>Date du Cours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $result = $conn->query("SELECT * FROM cours");
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                            <td>{$row['nom_cours']}</td>
+                            <td>{$row['groupe']}</td>
+                            <td>{$row['classe']}</td>
+                            <td>{$row['professeur']}</td>
+                            <td>{$row['horaire']}</td>
+                            <td>{$row['date_cours']}</td>
+                          </tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Absences Étudiants -->
+    <div class="section">
+        <h2>Mes Absences</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Étudiant</th>
+                    <th>Groupe</th>
+                    <th>Classe</th>
+                    <th>Matière</th>
+                    <th>Date</th>
+                    <th>Motif</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $result = $conn->query("SELECT * FROM absences");
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                            <td>{$row['etudiant']}</td>
+                            <td>{$row['groupe']}</td>
+                            <td>{$row['classe']}</td>
+                            <td>{$row['matiere']}</td>
+                            <td>{$row['date_absence']}</td>
+                            <td>{$row['motif']}</td>
+                          </tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Absences Professeurs -->
+    <div class="section">
+        <h2>Absences des Professeurs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Professeur</th>
+                    <th>Matière</th>
+                    <th>Classe</th>
+                    <th>Groupe</th>
+                    <th>Date</th>
+                    <th>Motif</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $result = $conn->query("SELECT * FROM absence_prof");
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr>
+                            <td>{$row['professeur']}</td>
+                            <td>{$row['matiere']}</td>
+                            <td>{$row['classe']}</td>
+                            <td>{$row['groupe']}</td>
+                            <td>{$row['date_absence']}</td>
+                            <td>{$row['motif']}</td>
+                          </tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
+
 </div>
-
-
-<div class="section">
-    <h2>Mes Absences</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Étudiant</th>
-                <th>Groupe</th>
-                <th>Classe</th>
-                <th>Matière</th>
-                <th>Date</th>
-                <th>Motif</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            $result = $conn->query("SELECT * FROM absences");
-            while($row = $result->fetch_assoc()) {
-                echo "<tr>
-                        <td>".$row['etudiant']."</td>
-                        <td>".$row['groupe']."</td>
-                        <td>".$row['classe']."</td>
-                        <td>".$row['matiere']."</td>
-                        <td>".$row['date_absence']."</td>
-                        <td>".$row['motif']."</td>
-                      </tr>";
-            }
-            ?>
-        </tbody>
-    </table>
-</div>
-
-
-</div>
-
 </body>
 </html>
